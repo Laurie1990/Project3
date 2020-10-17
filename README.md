@@ -5,23 +5,23 @@
 * This project aims to use machine learning to help identify households where children are most at risk of leaving education and participating in the labour market.
 *  In many developing countries, this is a significant issue which prevents educational attainment for children, generally leading to lower lifetime incomes, 
 * and makes the accumulation of human capital difficult foir further economic development in these countries.
-* This project utilizes a datasource collected by the [SMERU Research Institute](https://smeru.or.id/en/about), which conducted a study on the effects of Uncoditional Cash Transfers (UCT's) on child labour within households.
+* This project utilizes a datasource collected by the [SMERU Research Institute](https://smeru.or.id/en/about), which conducted a study on the effects of Uncoditional Cash Transfers (UCT's) on child labour within households between 2005 and 2006.
+* The original purpose of the data collection was to facilitate a rigorous policy impact evaluation, comparing households that received the UCT (the treated) to those that did not (the untreated group). 
+* Using various techniques, researchers have sought to identify an Average Treatment Effect and attribute causality 
+* In this project, we propose to 
+* A portion of this dataset was supplied to the author, as part of their studies in developmental economics at the Australian National University.
 
 
 - - -
 
 ## Helpful Links
 
-* [Scikit-Learn](http://scikit-learn.org/stable/documentation.html)
+* [Unconditional Cash Transfers](https://en.wikipedia.org/wiki/Unconditional_cash_transfer)
 
-* [Machine Learning with Python Cookbook](https://www.safaribooksonline.com/library/view/machine-learning-with/9781491989371/)
+* [A study relating to this UCT program](https://www.business.uwa.edu.au/__data/assets/pdf_file/0004/2053084/Bazzi,-Sumarto,-Suryahadi-3ie-Report-March-2012.pdf)
 
 * [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python)
 
 * [MNIST and Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk)
 
 - - -
-
-### Copyright
-
-Data Boot Camp © 2018. All Rights Reserved.
