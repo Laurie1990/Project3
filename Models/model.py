@@ -7,6 +7,7 @@ from sklearn.model_selection import RepeatedKFold
 from sklearn.model_selection import cross_val_score
 from imblearn.pipeline import Pipeline, make_pipeline
 from imblearn.over_sampling import SMOTE
+from persist import save_model, load_model
 
 
 def load_data():
@@ -51,11 +52,11 @@ def test_model(model, X_test, y_test):
 
 # X_train_os, y_train_os = smt.fit_sample(X_train, y_train)
 
-def save_model(model):
-    dump(model, "model.joblib")
+# def save_model(model):
+#     dump(model, "model.joblib")
 
-def load_model():
-    return load("model.joblib")
+# def load_model():
+#     return load("model.joblib")
 
 
 

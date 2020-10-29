@@ -72,10 +72,10 @@ function showResult(data) {
     let alertOutcomeDisplay = d3.select("#alertOutcome");
 
     if (data["result"][0] == 1) {
-        outcome = "Survived";
+        outcome = "Household at risk";
         alertOutcomeDisplay.attr("class", "alert alert-success");
     } else if (data["result"][0] == 0) {
-        outcome = "Dead";
+        outcome = "Household not at high risk";
         alertOutcomeDisplay.attr("class", "alert alert-info");
     }
 
