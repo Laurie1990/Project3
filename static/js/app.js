@@ -4,7 +4,7 @@ d3.select("#doCheckTicket").on("click", (event) => doCheckTicket(event));
 
 d3.select("#alertOutcome").style("display", "none");
 
-function doCheckRisk(event) {
+function doCheckTicket(event) {
     d3.event.preventDefault();
     d3.select("#alertOutcome").style("display", "none");
     console.log("Checking household risk");
