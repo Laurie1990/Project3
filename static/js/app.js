@@ -9,15 +9,15 @@ function doCheckTicket(event) {
     d3.select("#alertOutcome").style("display", "none");
     console.log("Checking household risk");
  //======================ROW 1 of INPUT Variables===========================================
-    let gender = d3.select("#femaleh").node().value;
+    let femaleh = d3.select("#femaleh").node().value;
     let hhsize = d3.select("#inputhhsize").node().value;
     let rural = d3.select("#rural").node().value;
 
 //=====================ROW 2 of INPUT Variables============================================
-    let low_education = d3.select("#low_education").node().value;
-    let low_income = d3.select("#low_income").node().value;
+    let Low_education = d3.select("#low_education").node().value;
+    let Low_income = d3.select("#low_income").node().value;
     let region = d3.select("#region").node().value;
-    let childlabour_05 = d3.select("#childlabour_05").node().value;
+    let Childlabour_05 = d3.select("#childlabour_05").node().value;
 
 //=====================ROW 3 of INPUT Variables============================================
     age_0t6 = d3.select("#age_0t6").node().value;
@@ -33,13 +33,13 @@ function doCheckTicket(event) {
 
 
     let data = {
-        "gender": gender,
+        "femaleh": femaleh,
         "hhsize": parseFloat(hhsize),
         "rural": rural,
-        "low_education": low_education,
-        "low_income": low_income,
+        "Low_education": Low_education,
+        "Low_income": Low_income,
         "region": region,
-        "childlabour_05": childlabour_05,
+        "Childlabour_05": Childlabour_05,
         "age_0t6": parseFloat(age_0t6),
         "age_7t12": parseFloat(age_7t12),
         "age_13t15": parseFloat(age_13t15),
