@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from flask import Flask, jsonify, render_template, request
 from joblib import load
-import models.persist
-from models.persist import load_model
+import model.persist
+from model.persist import load_model
 
 
 
@@ -15,13 +15,14 @@ app= Flask(__name__)
 @app.route('/')
 def index():
     """
-    Display the main webpage where users can enter their details
-    which we will then pass to the prediction endpoint
+    Display page for users to enter explanatory data
     """
     #return "Testing, testing"
     return render_template("index.html")
 
-@app.route('/predict_test', methods=["POST"])
+
+
+@app.route('/predict', methods=["POST"])
 def predict_test():
     data = request.json
 
@@ -31,25 +32,27 @@ def predict_test():
         "age_0t6", "age_7t12", "age_13t15", "age_16t18", "age_19t60", "age_61"
     ]
 
+ # convert femaleh to binary variable
     rename_cols = {
         "femaleh": "femaleh",
     }
+    
 
     if (data["femaleh"] == "female"):
         data["femaleh"] = 1
     else:
         data["femaleh"] = 0
-
+# convert rural to binary variable
     if (data["rural"] == "rural"):
         data["rural"] = 1
     else:
         data["rural"] = 0 
-
+# convert low_education to binary variable
     if (data["Low_education"] == "low education"):
         data["Low_education"] = 1
     else:
         data["Low_education"] = 0
-
+# convert low_income to binary variable
     if (data["Low_income"] == "low income"):
         data["Low_income"] = 1
     else:
