@@ -40,12 +40,12 @@ function doCheckTicket(event) {
         "Low_income": Low_income,
         "region": region,
         "Childlabour_05": Childlabour_05,
-        "age_0t6": parseFloat(age_0t6),
-        "age_7t12": parseFloat(age_7t12),
-        "age_13t15": parseFloat(age_13t15),
-        "age_16t18": parseFloat(age_16t18),
-        "age_19t60": parseFloat(age_19t60),
-        "age_61": parseFloat(age_61),
+        "age_0t6": parseFloat(age_0t6)/parseFloat(hhsize),
+        "age_7t12": parseFloat(age_7t12)/parseFloat(hhsize),
+        "age_13t15": parseFloat(age_13t15)/parseFloat(hhsize),
+        "age_16t18": parseFloat(age_16t18)/parseFloat(hhsize),
+        "age_19t60": parseFloat(age_19t60)/parseFloat(hhsize),
+        "age_61": parseFloat(age_61)/parseFloat(hhsize),
     }
 
     console.log(data);
@@ -73,10 +73,10 @@ function showResult(data) {
 
     if (data["result"][0] == 1) {
         outcome = "Household at risk";
-        alertOutcomeDisplay.attr("class", "alert alert-success");
+        alertOutcomeDisplay.attr("class", "alert alert-danger");
     } else if (data["result"][0] == 0) {
         outcome = "Household not at high risk";
-        alertOutcomeDisplay.attr("class", "alert alert-info");
+        alertOutcomeDisplay.attr("class", "alert alert-success");
     }
 
     alertOutcomeDisplay.text(outcome);

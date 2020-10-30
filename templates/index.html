@@ -30,14 +30,14 @@
                 <div class="form-group col-md-3">
                     <label for="femaleh">Gender of Head of Household</label>
                     <select class="form-control" id="femaleh">
-                        <option value="female">Female</option>
                         <option value="male">Male</option>
+                        <option value="female">Female</option>
                     </select>
                 </div>
 
                 <div class="form-group col-md-3">
-                    <label for="inputhhsize">Household Size</label>
-                    <input type="number" class="form-control" id="inputhhsize" placeholder="Number of household members">
+                    <label for="inputhhsize">Number of household members</label>
+                    <input type="number" min="1" class="form-control" id="inputhhsize" value=1>
                 </div>
 
                 <div class="form-group col-md-3">
@@ -83,8 +83,8 @@
                 <div class="form-group col-md-3">
                     <label for="childlabour_05">Any children already working?</label>
                     <select class="form-control" id="childlabour_05">
-                        <option value="yes">Yes</option>
                         <option value="no">No</option>
+                        <option value="yes">Yes</option>
                     </select>
                 </div>
 
@@ -94,17 +94,17 @@
 
                 <div class="form-group col-md-3">
                     <label for="age_0t6">Household members age 0 to 6</label>
-                    <input type="number" class="form-control" id="age_0t6" placeholder="Number age 0 to 6">
+                    <input type="number" min="0" class="form-control" id="age_0t6" value=0>
                 </div>
 
                 <div class="form-group col-md-3">
                     <label for="age_7t12">Household members age 7 to 12</label>
-                    <input type="number" class="form-control" id="age_7t12" placeholder="Number age 7 to 12">
+                    <input type="number" min="0" class="form-control" id="age_7t12" value=0>
                 </div>
 
                 <div class="form-group col-md-3">
                     <label for="age_13t15">Household members age 13 to 15</label>
-                    <input type="number" class="form-control" id="age_13t15" placeholder="Number age 13 to 15">
+                    <input type="number" min="0" class="form-control" id="age_13t15" value=0>
                 </div>
 
 
@@ -115,17 +115,17 @@
 
     <div class="form-group col-md-3">
         <label for="age_16t18">Household members age 16 to 18</label>
-        <input type="number" class="form-control" id="age_16t18" placeholder="Number age 16 to 18">
+        <input type="number" min="0" class="form-control" id="age_16t18" value=0>
     </div>
 
     <div class="form-group col-md-3">
         <label for="age_19t60">Household members age 19 to 60</label>
-        <input type="number" class="form-control" id="age_19t60" placeholder="Number age 19 to 60">
+        <input type="number" min="0" class="form-control" id="age_19t60" value=0>
     </div>
 
     <div class="form-group col-md-3">
         <label for="age_61">Household members 61 and older</label>
-        <input type="number" class="form-control" id="age_61" placeholder="Number age 61 and over">
+        <input type="number" min="0" class="form-control" id="age_61" value=0>
     </div>
 
 <!-- =======================SUBMIT FORM=========================================================================================================-->
