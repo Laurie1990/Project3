@@ -8,6 +8,9 @@ This project utilizes a datasource collected by the [SMERU Research Institute](h
 
 Rather than perform a policy impact evalutation, in this project, we propose to use machine learning techniques to try and classify households most at risk of child labour participation. We will do this by confining our analysis to the untreated group of households. Using the initial household data collected via survey in 2005, we will train our model to predict and classify households most likely to have child labour, which was recorded in a follow-up survey in 2006. The benefit of this is that it allows for more effective targeting of groups for government policy intervention, delivering a greater social and economic benefit for the use of public funds.
 
+An app demonstrating this machine learning model can be found here: https://child-labour-predict.herokuapp.com/
+
+
 ## Technologies used
 * Python/Pandas
 * MatplotLib
