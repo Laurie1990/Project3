@@ -45,6 +45,7 @@ An app demonstrating this machine learning model can be found here: https://chil
 - - -
 ## Acknowledgements
 The team of Uzair Khan, Laurie Walker and Tahsin Rahman would like to acknowledge and thank our instructor Ryan, as well as our TA's Nick and Mish.
+
 The html file and app.js borrow heavily from a class demonstration given by our instructor Ryan.
 
 - - -
