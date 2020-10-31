@@ -22,14 +22,14 @@ An app demonstrating this machine learning model can be found here: https://chil
 - - -
 
 # Process
-* 1. In notebooks, extract data from stata file (.dta format), export as csv to data
-* 2. In notebooks, read csv from #1 clean and preprocess data, EDA. Export cleaned data as csv to data
-* 3. In notebooks, read cleaned data and explore different modelling approaches. Select a final model
-* 4. In model, create model.py that replicates our final model from #3
-* 5. In model, save a trained version of our model as model.joblib which can be loaded at command
-* 6. In general repository, create app.py to build a web application
-* 7. In templates, create an html page for input which can be passed back to our trained model in #5
-* 8. In static/js, create app.js which takes and formats inputs from #7 upon form submission, passes to stored model and returns a prediction
+* 1. In notebooks, extract data from stata file (.dta format), export as csv to data.
+* 2. In notebooks, read csv from #1 clean and preprocess data, EDA. Export cleaned data as csv to data.
+* 3. In notebooks, read cleaned data and explore different modelling approaches. Select a final model.
+* 4. In model, create model.py that replicates our final model from #3.
+* 5. In model, save a trained version of our model as model.joblib which can be loaded at command.
+* 6. In general repository, create app.py to build a web application.
+* 7. In templates, create an html page for input which can be passed back to our trained model in #5.
+* 8. In static/js, create app.js which takes and formats inputs from #7 upon form submission, passes to stored model and returns a prediction.
 * 9. In general repository, create Procfile, link to Hero and host app.
 
 
@@ -43,6 +43,11 @@ An app demonstrating this machine learning model can be found here: https://chil
 * [A study relating to this UCT program](https://www.business.uwa.edu.au/__data/assets/pdf_file/0004/2053084/Bazzi,-Sumarto,-Suryahadi-3ie-Report-March-2012.pdf)
 
 - - -
+## Acknowledgements
+The team of Uzair Khan, Laurie Walker and Tahsin Rahman would like to acknowledge and thank our instructor Ryan, as well as our TA's Nick and Mish.
+The html file and app.js borrow heavily from a class demonstration given by our instructor Ryan.
+
+- - -
 ## Copyright
-A portion of this dataset was supplied to the author, as part of their studies in developmental economics at the Australian National University, for the purposes of education. 
+A portion of this dataset was supplied to the one of the authors, as part of their study in developmental economics at the Australian National University. 
 This data is not intended for commercial use. All data has been anonymised.
